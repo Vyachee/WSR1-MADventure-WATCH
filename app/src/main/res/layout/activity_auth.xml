@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:background="#171717"
+    tools:context=".Auth">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_boxedEdges="all"
+        android:gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextStyle"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:hint="EMail"
+            android:fontFamily="@font/gotham"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextStyle"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:text=""
+            android:hint="Password"
+            android:fontFamily="@font/gotham"/>
+
+        <TextView
+            android:id="@+id/tv_signin"
+            android:fontFamily="@font/gotham"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:background="@drawable/button_default"
+            android:layout_marginTop="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign in" />
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>

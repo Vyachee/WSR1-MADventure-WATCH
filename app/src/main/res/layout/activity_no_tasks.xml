@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:background="#171717"
+    tools:context=".NoTasks">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_boxedEdges="all"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have not any tasks"
+            android:textColor="#fff"
+            android:fontFamily="@font/gotham"
+            android:textSize="24sp"
+            android:textFontWeight="800"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:fontFamily="@font/gotham"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:background="@drawable/button_default"
+            android:layout_marginTop="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Log out" />
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
